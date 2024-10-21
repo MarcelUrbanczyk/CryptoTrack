@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.d6025de6.js",
-    "static/js/453.2d897514.chunk.js": "/static/js/453.2d897514.chunk.js",
-    "static/media/logo.png": "/static/media/logo.6f7c9b91ceef0b1c9321.png",
-    "index.html": "/index.html",
-    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.d6025de6.js.map": "/static/js/main.d6025de6.js.map",
-    "453.2d897514.chunk.js.map": "/static/js/453.2d897514.chunk.js.map"
+    "main.css": "/CryptoTrack/static/css/main.e6c13ad2.css",
+    "main.js": "/CryptoTrack/static/js/main.c26f3c30.js",
+    "static/js/453.2d897514.chunk.js": "/CryptoTrack/static/js/453.2d897514.chunk.js",
+    "static/media/logo.png": "/CryptoTrack/static/media/logo.6f7c9b91ceef0b1c9321.png",
+    "index.html": "/CryptoTrack/index.html",
+    "main.e6c13ad2.css.map": "/CryptoTrack/static/css/main.e6c13ad2.css.map",
+    "main.c26f3c30.js.map": "/CryptoTrack/static/js/main.c26f3c30.js.map",
+    "453.2d897514.chunk.js.map": "/CryptoTrack/static/js/453.2d897514.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.d6025de6.js"
+    "static/js/main.c26f3c30.js"
   ]
 }
