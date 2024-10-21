@@ -2,6 +2,7 @@
   "name": "cryptotrack",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://marcelurbanczyk.github.io/CryptoTrack/",
   "dependencies": {
     "@tanstack/react-query": "^5.59.15",
     "@testing-library/jest-dom": "^5.17.0",
