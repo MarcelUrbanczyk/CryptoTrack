@@ -1,9 +1,9 @@
-import Construction from "../features/Construction";
+import Header from "../features/Header";
 
 function App() {
   return (
     <>
-      <Construction />;
+      <Header />
     </>
   );
 }
