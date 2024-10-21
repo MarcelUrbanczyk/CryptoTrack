@@ -10,5 +10,6 @@ export const theme = {
     primary: colors.dodgerBlue,
     secondary: colors.lavenderPurple,
     background: colors.magnolia,
+    bonus: colors.sisal,
   },
 };
