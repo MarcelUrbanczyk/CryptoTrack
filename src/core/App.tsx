@@ -1,7 +1,13 @@
 import Construction from "../features/Construction";
+import GlobalStyle from "./GlobalStyles";
 
 function App() {
-  return <Construction />;
+  return (
+    <>
+      <GlobalStyle />
+      <Construction />;
+    </>
+  );
 }
 
 export default App;
