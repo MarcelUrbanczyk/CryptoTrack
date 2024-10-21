@@ -4,7 +4,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    background-color: white;
+    background-color: ${({ theme }) => theme.colors.background};
     box-sizing: border-box;
     font-family: "Montserrat";
     margin: auto;
