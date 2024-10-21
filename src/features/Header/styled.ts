@@ -19,7 +19,7 @@ export const Name = styled.h1`
 `;
 
 export const Separator = styled.hr`
-  height: 20px;
+  height: 30px;
   width: 2px;
   background-color: ${({ theme }) => theme.colors.bonus};
   margin: auto 0;
