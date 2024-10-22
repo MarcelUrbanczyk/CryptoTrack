@@ -5,7 +5,8 @@ import {
   Route,
   Switch,
 } from "react-router-dom/cjs/react-router-dom";
-import { toExchanges } from "./routes";
+import { toExchanges, toBrowse } from "./routes";
+import Browse from "../features/Browse";
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
       <HashRouter>
         <Header />
         <Switch>
+          <Route path={toBrowse()}>
+            <Browse />
+          </Route>
           <Route path={toExchanges()}>
             <>Exchanges</>
           </Route>
