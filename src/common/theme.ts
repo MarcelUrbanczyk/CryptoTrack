@@ -3,6 +3,7 @@ export const colors = {
   lavenderPurple: "#8f8cb8",
   magnolia: "#f9f8ff",
   sisal: "#d5cabd",
+  black: "#000000",
 };
 
 export const theme = {
@@ -11,5 +12,6 @@ export const theme = {
     secondary: colors.lavenderPurple,
     background: colors.magnolia,
     bonus: colors.sisal,
+    text: colors.black,
   },
 };
