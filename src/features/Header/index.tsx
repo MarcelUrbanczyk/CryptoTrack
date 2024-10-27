@@ -1,16 +1,26 @@
-import { Container, Icon, Name, Separator } from "./styled";
+import { Container, Icon, Name, Separator, NavLink } from "./styled";
 import icon from "./../../common/icon.png";
-import Navigation from "./Navigation";
+import {
+  toBrowse,
+  toExchanges,
+  toNFTs,
+  toNews,
+  toTrade,
+} from "../../core/routes";
 
-const Header = () => {
+const Navigation = () => {
   return (
     <Container>
       <Icon src={icon} />
-      <Name>Crypto Track</Name>
+      <Name>CryptoTrack</Name>
       <Separator />
-      <Navigation />
+      <NavLink to={toBrowse()}>Browse</NavLink>
+      <NavLink to={toTrade()}>Trade</NavLink>
+      <NavLink to={toNFTs()}>NFTs</NavLink>
+      <NavLink to={toExchanges()}>Exchanges</NavLink>
+      <NavLink to={toNews()}>News</NavLink>
     </Container>
   );
 };
 
-export default Header;
+export default Navigation;
