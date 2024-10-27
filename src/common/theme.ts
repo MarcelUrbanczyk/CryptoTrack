@@ -9,6 +9,7 @@ export const colors = {
   jacksonsPurple: "#1b20a1",
   cinder: "#05050a",
   selago: "#dfe0fb",
+  transparentRoyalBlue: "rgba(93, 98, 227, 0.2)",
 };
 
 export const lightTheme = {
@@ -18,7 +19,9 @@ export const lightTheme = {
     background: colors.whiteLilac,
     accent: colors.royalBlue,
     text: colors.blackPearl,
+    container: colors.transparentRoyalBlue,
   },
+  shadow: `0px 4px 4px 0px ${colors.transparentRoyalBlue}`,
 };
 
 export const darkTheme = {
