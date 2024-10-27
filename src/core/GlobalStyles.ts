@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Montserrat";
     margin: auto;
     word-break: keep-all;
+    transition: 0.2s;
     @media (max-width: 960px) {
       padding: 20px;
     }

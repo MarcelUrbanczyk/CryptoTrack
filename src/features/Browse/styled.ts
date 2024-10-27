@@ -23,7 +23,6 @@ export const Container = styled.article<{ $isUp: boolean }>`
   align-items: center;
   gap: 32px;
   cursor: pointer;
-  transition: 0.2s linear;
   &:hover {
     transform: scale(1.01);
     box-shadow: 0px 0px 8px -2px ${({ $isUp }) => ($isUp ? "green" : "red")};

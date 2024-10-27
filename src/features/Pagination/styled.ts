@@ -27,7 +27,6 @@ export const Button = styled.button`
   padding: 8px;
   display: flex;
   cursor: pointer;
-  transition: 0.3s;
   border: none;
   &:hover {
     transform: scale(1.01);
