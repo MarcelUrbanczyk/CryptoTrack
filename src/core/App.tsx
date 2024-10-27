@@ -1,4 +1,4 @@
-import Navigation from "../features/Header";
+import Navigation from "../features/Navigation";
 import {
   HashRouter,
   Redirect,
