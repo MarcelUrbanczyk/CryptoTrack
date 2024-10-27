@@ -2,12 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./core/App";
 import reportWebVitals from "./reportWebVitals";
-import { ThemeProvider } from "styled-components";
-import { theme } from "./common/theme";
-import GlobalStyle from "./core/GlobalStyles";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-
+import { Provider } from "react-redux";
+import { store } from "./core/store";
 const queryClient = new QueryClient();
 
 const root = ReactDOM.createRoot(
@@ -16,13 +14,12 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
+    <Provider store={store}>
       <QueryClientProvider client={queryClient}>
         <App />
         <ReactQueryDevtools initialIsOpen={false} />
       </QueryClientProvider>
-    </ThemeProvider>
+    </Provider>
   </React.StrictMode>
 );
 
