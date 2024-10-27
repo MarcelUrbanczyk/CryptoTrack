@@ -3,7 +3,7 @@ import { RootState } from "../core/store";
 
 const themeSlice = createSlice({
   name: "theme",
-  initialState: "light",
+  initialState: "dark",
   reducers: {
     switchTheme: (state) => {
       state = state === "light" ? "dark" : "light";
