@@ -10,6 +10,7 @@ export const colors = {
   cinder: "#05050a",
   selago: "#dfe0fb",
   transparentRoyalBlue: "rgba(93, 98, 227, 0.2)",
+  transparentJacksonsPurple: "rgba(27, 32, 161, 0.2)",
 };
 
 export const lightTheme = {
@@ -21,6 +22,9 @@ export const lightTheme = {
     text: colors.blackPearl,
     container: colors.transparentRoyalBlue,
   },
+  breakpoints: {
+    first: "1720px",
+  },
   shadow: `0px 4px 4px 0px ${colors.transparentRoyalBlue}`,
 };
 
@@ -28,8 +32,13 @@ export const darkTheme = {
   colors: {
     primary: colors.perano,
     secondary: colors.luckyPoint,
-    accent: colors.jacksonsPurple,
     background: colors.cinder,
+    accent: colors.jacksonsPurple,
     text: colors.selago,
+    container: colors.transparentJacksonsPurple,
   },
+  breakpoints: {
+    first: "1720px",
+  },
+  shadow: `0px 4px 4px 0px ${colors.transparentJacksonsPurple}`,
 };
