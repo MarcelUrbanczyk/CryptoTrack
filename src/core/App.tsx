@@ -7,10 +7,18 @@ import {
 } from "react-router-dom/cjs/react-router-dom";
 import { toExchanges, toBrowse, toNFTs, toTrade, toNews } from "./routes";
 import Browse from "../features/Browse";
+import { ThemeProvider } from "styled-components";
+import { useAppSelector } from "./store";
+import { selectTheme } from "../common/themeSlice";
+import { darkTheme, lightTheme } from "../common/theme";
+import GlobalStyle from "./GlobalStyles";
 
 function App() {
+  const { theme } = useAppSelector(selectTheme);
+
   return (
-    <>
+    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+      <GlobalStyle />
       <HashRouter>
         <Navigation />
         <Switch>
@@ -31,7 +39,7 @@ function App() {
           </Route>
         </Switch>
       </HashRouter>
-    </>
+    </ThemeProvider>
   );
 }
 

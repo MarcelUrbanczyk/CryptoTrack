@@ -9,13 +9,16 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: "Montserrat";
     margin: auto;
-    word-break: break-word;
+    word-break: keep-all;
     @media (max-width: 960px) {
       padding: 20px;
     }
   }
   a {
     text-decoration: none;
+  }
+  strong{
+    font-weight: 600;
   }
 `;
 
