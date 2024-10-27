@@ -9,17 +9,28 @@ export const Container = styled.nav`
   border-bottom: 1px solid ${({ theme }) => theme.colors.accent};
   box-shadow: ${({ theme }) => theme.shadow};
   max-height: 140px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.first}) {
+    gap: 36px;
+  }
 `;
 
 export const Icon = styled.img`
   width: 86px;
   height: 86px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.first}) {
+    width: 64px;
+    height: 64px;
+  }
 `;
 
 export const Name = styled.h1`
   font-size: 32px;
   color: ${({ theme }) => theme.colors.text};
   margin: auto 0;
+  @media (max-width: ${({ theme }) => theme.breakpoints.first}) {
+    font-size: 28px;
+  }
 `;
 
 export const Separator = styled.hr`
@@ -28,6 +39,9 @@ export const Separator = styled.hr`
   background-color: ${({ theme }) => theme.colors.accent};
   margin: auto 0;
   border: none;
+  @media (max-width: ${({ theme }) => theme.breakpoints.first}) {
+    height: 64px;
+  }
 `;
 
 export const NavLink = styled(Link)`
@@ -37,4 +51,7 @@ export const NavLink = styled(Link)`
   cursor: pointer;
   text-decoration: none;
   color: ${({ theme }) => theme.colors.text};
+  @media (max-width: ${({ theme }) => theme.breakpoints.first}) {
+    font-size: 20px;
+  }
 `;
