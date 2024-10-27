@@ -1,21 +1,24 @@
 import { styled } from "styled-components";
+import { ReactComponent as ArrowIcon } from "../../common/arrow.svg";
 
 export const Main = styled.main`
   max-width: 70vw;
   margin: 20px auto;
 `;
 
-export const Header = styled.h2``;
+export const Header = styled.h2`
+  font-size: 36px;
+  color: ${({ theme }) => theme.colors.text};
+  font-weight: 600;
+`;
 
 export const Container = styled.article`
-  padding: 8px;
-  background-color: white;
+  padding: 26px;
+  background-color: ${({ theme }) => theme.colors.container};
   display: flex;
-  border: 1px solid ${({ theme }) => theme.colors.bonus};
-  border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 12px;
   align-items: center;
-  gap: 24px;
+  gap: 32px;
   cursor: pointer;
   transition: 0.2s linear;
   &:hover {
@@ -24,37 +27,32 @@ export const Container = styled.article`
 `;
 
 export const Wrapper = styled.span`
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-`;
-
-export const Rank = styled.p`
-  font-weight: 500;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
 `;
 
 export const Icon = styled.img`
-  max-width: 24px;
-  height: 100%;
+  width: 48px;
+  height: 48px;
 `;
 
 export const Name = styled.p`
   font-weight: 500;
+  font-size: 26px;
+  color: ${({ theme }) => theme.colors.text};
 `;
 
-export const Price = styled.p``;
+export const Price = styled(Name)`
+  word-break: keep-all;
+`;
 
-export const PriceChange = styled.p<{ $isUp: boolean }>`
+export const PriceChange = styled(Price)<{ $isUp: boolean }>`
   color: ${({ $isUp }) => ($isUp ? "green" : "red")};
 `;
 
-export const AdnotationWrapper = styled.span`
-  display: flex;
-  gap: 48px;
-`;
-
-export const Adnotation = styled.p`
-  color: ${({ theme }) => theme.colors.bonus};
-  margin: auto 0 0;
-  font-size: 12px;
+export const Arrow = styled(ArrowIcon)`
+  color: ${({ theme }) => theme.colors.accent};
+  width: 32px;
+  margin: 0 0 0 auto;
 `;
