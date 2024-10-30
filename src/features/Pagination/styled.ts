@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import { ReactComponent as ArrowIcon } from "../../common/arrow.svg";
+import { ContainerStyles } from "../../common/container";
 
 export const Wrapper = styled.footer`
   display: flex;
@@ -20,13 +21,12 @@ export const Arrow = styled(ArrowIcon)<{ $rotated?: boolean }>`
   }
 `;
 
-export const Button = styled.button`
+export const Button = styled(ContainerStyles).attrs({ as: "button" })`
   max-height: 64px;
-  background-color: ${({ theme }) => theme.colors.container};
-  border-radius: 12px;
   padding: 8px;
   display: flex;
   cursor: pointer;
+  gap: 0;
   border: none;
   &:hover {
     transform: scale(1.01);
