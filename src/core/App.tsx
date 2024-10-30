@@ -12,6 +12,7 @@ import { useAppSelector } from "./store";
 import { selectTheme } from "../common/themeSlice";
 import { darkTheme, lightTheme } from "../common/theme";
 import GlobalStyle from "./GlobalStyles";
+import Trade from "../features/Trade";
 
 function App() {
   const { theme } = useAppSelector(selectTheme);
@@ -32,7 +33,7 @@ function App() {
             <>NFTs</>
           </Route>
           <Route path={toTrade()}>
-            <>trade</>
+            <Trade />
           </Route>
           <Route path={toNews()}>
             <>News</>
