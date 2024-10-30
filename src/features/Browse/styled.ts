@@ -1,5 +1,7 @@
 import { styled } from "styled-components";
 import { ReactComponent as ArrowIcon } from "../../common/arrow.svg";
+import { ContainerStyles } from "../../common/container";
+import { Link } from "react-router-dom";
 
 export const Main = styled.main`
   max-width: 70vw;
@@ -15,27 +17,22 @@ export const Header = styled.h2`
   }
 `;
 
-export const Container = styled.article<{ $isUp: boolean }>`
-  padding: 26px;
-  background-color: ${({ theme }) => theme.colors.container};
+export const Container = styled(ContainerStyles).attrs({ as: Link })<{
+  $isUp: boolean;
+}>`
   display: flex;
-  border-radius: 12px;
   align-items: center;
-  gap: 32px;
   cursor: pointer;
+  transition: 0.2s;
   &:hover {
     transform: scale(1.01);
     box-shadow: 0px 0px 8px -2px ${({ $isUp }) => ($isUp ? "green" : "red")};
-  }
-  @media (max-width: ${({ theme }) => theme.breakpoints.first}) {
-    padding: 10px 18px;
-    gap: 28px;
   }
 `;
 
 export const Wrapper = styled.span`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
   gap: 24px;
 `;
 

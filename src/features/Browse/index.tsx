@@ -58,6 +58,7 @@ const Browse = () => {
               <Container
                 $isUp={coin.price_change_percentage_24h >= 0}
                 key={coin.id}
+                to={`/trade/${coin.id}`}
               >
                 <Icon src={coin.image} alt="coin icon" />
                 <Name>{coin.name}</Name>
